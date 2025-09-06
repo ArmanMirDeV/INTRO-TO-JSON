@@ -4,15 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #post-container{
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            row-gap: 50px;
+           
+        }
+
+        .post-card{
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px 1px gray;
+            height: 100%;
+            background-color: rgb(243, 243, 240);
+            
+
+           
+        }
+        .post-card p{
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     
 <button onclick="loadData()" >Load Data</button>
 <button onclick="loadPost()">Load Posts</button>
 
-<ul id="post-container"></ul>
+<!-- <ol id="post-container"></ol> -->
 
-
+    <h1>All Posts </h1>
+    <div id="post-container">
+       
+    </div>
 
 
     <!-- <script src="introJSON.js"></script> -->
