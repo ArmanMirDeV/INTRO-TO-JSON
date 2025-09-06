@@ -1,4 +1,14 @@
-console.log("Explore API")
+
+
+const loadData= ()=>{
+fetch("https://jsonplaceholder.typicode.com/todos/1").then((res) => res.json()).then((data) => console.log(data));
+}
+
+
+/* 
+fetch("https://jsonplaceholder.typicode.com/todos/1").then((res) => res.json()).then((data) => console.log(data)) */
+
+/* console.log("Explore API")
 
 const person = {
     name: "ARMAN",
@@ -20,4 +30,4 @@ console.log(personJSON, typeof personJSON);
 
 
 const personJSON1 = JSON.parse(personJSON);
-console.log(personJSON1);
+console.log(personJSON1); */
